@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table App</title>
+    <link rel="stylesheet" href="studentTableApp.css">
+    <link rel="stylesheet" href="studentTableApp.js">
+    <style src="studentTableApp.css"></style>
+</head>
+<body>
+    <h1>Student Table App</h1>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="number" id="marks" placeholder="Enter Marks">
+    <button onclick="addstudent()">Add Student</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+    <script src="studentTableApp.js"></script>
+</body>
+</html>

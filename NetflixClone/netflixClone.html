@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflixClone.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NETFLIX</div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">TV SHOWS</a>
+            <a href="#">MOVIES</a>
+            <a href="#">MY LIST</a>
+        </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Featured Movie</h1>
+                <p>watch the latest blockbuster movies and trending shows now.</p>
+                <button class="play">PLAY</button>
+                <button class="info">MORE INFO</button>
+            </div>
+        </section>
+        <section class="section">
+            <h2>TRENDING NOW</h2>
+            <div class="row-container">
+                <button class="scroll-button left" onclick="scrollLeftButton()">&#10094</button>
+                <div class="row" id="movieRow">
+                    <div class="movie"><img src="https://picsum.photos/200/300?1"></div>
+                    <div class="movie"><img src="https://picsum.photos/200/300?2"></div>
+                    <div class="movie"><img src="https://picsum.photos/200/300?3"></div>
+                    <div class="movie"><img src="https://picsum.photos/200/300?4"></div>
+                    <div class="movie"><img src="https://picsum.photos/200/300?5"></div>
+                    <div class="movie"><img src="https://picsum.photos/200/300?6"></div>
+                    <div class="movie"><img src="https://picsum.photos/200/300?7"></div>
+                </div>
+                <button class="scroll-button right" onclick="scrollRightRow()">&#10095;</button>
+            </div>
+        </section>
+    <script src="netflixClone.js"></script>
+</body>
+</html>

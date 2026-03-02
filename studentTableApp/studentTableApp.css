@@ -1,0 +1,26 @@
+body {
+    background: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+input {
+    padding: 8px;
+    margin: 8px;
+}
+button {
+    cursor: pointer;
+    color: darkslategrey;
+    background: lightgoldenrodyellow;
+    padding: 8px 15px;
+}
+table {
+    margin: auto;
+    margin-top: 35px;
+    width: 60%;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    padding: 10px;
+}

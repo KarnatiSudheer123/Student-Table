@@ -1,0 +1,41 @@
+body {
+        font-family: Arial;
+        margin: 0;
+        background-color: bisque;
+       }
+        header {
+            color: blueviolet;
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 40px;
+        }
+        .jobs {
+            background: darkgreen;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+            color: black;
+            background: #007bff;
+            border: none;
+            border-radius: 10px;
+        }
+        button:hover {
+            background: chocolate;
+        }
+        .applications {
+            margin-top: 35px;
+        }
+        .app-card {
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid green;
+        }

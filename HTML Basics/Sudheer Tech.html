@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/HTML%20Basics/website.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Sudheer Tech_files/style.css">
+    <title>Sudheer Tech</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: white;
+            color: black;
+        }
+        nav {
+            background: none;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            color: black;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            color: green;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+                color: blueviolet;
+                
+            }
+            .hero {
+                height: 90vh;
+                background: linear-gradient(to right, #3b82f6, #9333ea);
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                color: white;
+            }
+            .hero h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            .hero p {
+                font-size: 18px;
+                margin-bottom: 30px;
+                width: 60%;
+            }
+            .hero button {
+                padding: 12px 30px;
+                border: beige;
+                background: darkgreen;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+            .hero button:hover {
+                background: #111826;
+                color: white;
+            }
+            .services {
+                padding: 60px 50px;
+                text-align: center;
+            }
+            .services h2 {
+                margin-bottom: 40px;
+                font-size: 32px;
+            }
+            .service-container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .card {
+                background: aqua;
+                padding: 30px;
+                width: 30%;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+                transition: 0.3s;
+                margin-bottom: 20px;
+            }
+            .card:hover {
+                transform: translateY(-20px);
+            }
+            .card h3 {
+                margin-bottom: 15px;
+            }
+            footer {
+                background: gray;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            @media(max-width: 768px) {
+                .service-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .card {
+                    width:80%
+                }
+                .hero h2 {
+                    font-size: 35px;
+                }
+                .hero p {
+                    width: 90%;
+                }
+            }
+            
+    </style>
+   
+</head>
+<body>
+    <nav>
+        <h1>WELCOME TO SUDHEER PORTFOLIO</h1>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/HTML%20Basics/website.html#">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/HTML%20Basics/website.html#">Services</a></li>
+            <li><a href="http://127.0.0.1:5500/HTML%20Basics/website.html#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h2>Build your Future with Code</h2>
+        <p style="color: aquamarine;">we create modern, response an professional website using clean HTML and CSS.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Modern and responsive website designs for all devices.</p>
+            </div>
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Clean and optimized HTML &amp; CSS structure.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>User-focused design for better engagement.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        2026 Sudheer Tech | All Rights Reserved
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
