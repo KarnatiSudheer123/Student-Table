@@ -1,0 +1,17 @@
+body {
+    background: wheat;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+    padding: 10px;
+    margin: 5px;
+}
+button {
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

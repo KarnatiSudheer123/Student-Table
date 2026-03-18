@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.college-banner {
+    background-color: #002147;
+    color: white;
+    padding: 20px;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-box img {
+    height: 100px;
+    width: auto;
+}
+
+.text-content h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.sponsor {
+    font-weight: bold;
+    opacity: 0.9;
+}
